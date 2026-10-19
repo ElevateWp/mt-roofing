@@ -5,20 +5,20 @@ import AnimateOnScroll from '@/components/motion/AnimateOnScroll';
 
 const REASONS = [
   {
-    title: 'A fresh look for your roof',
-    description: 'A recent customer praised the fresh, modern look of their restored roof, gutters and roller door.',
+    title: 'Good work, completed promptly',
+    description: 'Customers praise the work for being completed quickly and at a good price.',
   },
   {
     title: 'Clear communication',
-    description: 'Customers have praised Felix and the team for clear communication from start to finish.',
+    description: 'Reviewers describe the workmen as hard working and tidy.',
   },
   {
     title: 'Quality work',
-    description: 'Customers describe the finished roofing work as high quality and recommend the team.',
+    description: 'One customer said the work was carried out with great attention to detail.',
   },
   {
-    title: 'Roofing and related work',
-    description: 'From roof repairs and replacement to gutters and maintenance, we discuss the work and agree the scope before starting.',
+    title: 'Roofing and damp proofing',
+    description: 'The team offers flat and pitched roofing, repairs, inspections, chimney repairs, damp proofing, guttering, fascias and soffits, and emergency roof repairs.',
   },
 ];
 
@@ -34,7 +34,7 @@ export default function HomeWhyUs() {
                 Our Approach
               </span>
               <h2 className="font-display text-26 sm:text-33 md:text-41 text-forest-ink mb-8 md:mb-10 leading-tight">
-                Why Customers Choose East Coast Roofing
+                Why Customers Choose MT Roofing and Damp Proofing
               </h2>
 
               <div className="divide-y divide-mist">
@@ -72,7 +72,7 @@ export default function HomeWhyUs() {
                       className="object-cover"
                     />
                   </MediaParallax>
-                  <div className="absolute bottom-3 left-3 bg-[#183454]/90 backdrop-blur-sm text-paper font-body text-12 px-3 py-1 font-medium">
+                  <div className="absolute bottom-3 left-3 bg-[#17191C]/90 backdrop-blur-sm text-paper font-body text-12 px-3 py-1 font-medium">
                     Roof replacement
                   </div>
                 </div>
@@ -87,7 +87,7 @@ export default function HomeWhyUs() {
                   />
                 </div>
                 {/* Residential property detail */}
-                <div className="col-span-2 sm:col-span-1 relative aspect-square bg-[#F2F6FC] overflow-hidden border border-mist shadow-sm">
+                <div className="col-span-2 sm:col-span-1 relative aspect-square bg-[#F3F8FC] overflow-hidden border border-mist shadow-sm">
                   <Image
                     src="/images/jsroof-stock-04.jpg"
                     alt="Traditional pitched roof on a home"
@@ -95,8 +95,8 @@ export default function HomeWhyUs() {
                     sizes="(max-width: 640px) 100vw, 25vw"
                     className="object-cover object-top"
                   />
-                  <div className="absolute bottom-0 left-0 right-0 bg-[#183454]/80 text-paper font-body text-12 px-3 py-2 text-center">
-                    North Queensland homes
+                  <div className="absolute bottom-0 left-0 right-0 bg-[#17191C]/80 text-paper font-body text-12 px-3 py-2 text-center">
+                    Sevenoaks and Kent homes
                   </div>
                 </div>
               </div>

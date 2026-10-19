@@ -17,9 +17,9 @@ import { SERVICES } from '@/lib/clinic-data';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Roofing Services in North Queensland',
+  title: 'Roofing Services in Sevenoaks and Kent',
   description:
-    'East Coast Roofing provides roof replacements, roof repairs, gutters and fascias, and roof maintenance across North Queensland. Call +61 430 964 182.',
+    'MT Roofing and Damp Proofing provides roofing, damp proofing and roofline services across Sevenoaks and Kent. Call +44 7951 960060.',
   pathname: '/',
 });
 
@@ -29,7 +29,7 @@ export default function HomePage() {
     title: s.name,
     subtitle: s.tagline,
     description: s.shortDescription,
-    href: `/${s.slug}/`,
+    href: `/services/${s.slug}/`,
     theme: idx % 2 === 1 ? 'forest' : 'paper',
   }));
 
@@ -47,7 +47,7 @@ export default function HomePage() {
       {/* SECTION 3: Roofing Services */}
       <PinnedHorizontalTrack
         items={serviceTrackItems}
-        title="Roofing & Construction Services"
+      title="Roofing & Property Services"
       />
 
       {/* Signature Brand Device 2 of 4: Full-Bleed Section Divider */}
@@ -55,7 +55,7 @@ export default function HomePage() {
         <TextureBackground variant="divider" className="opacity-30" />
       </div>
 
-      {/* SECTION 4: Why Choose East Coast Roofing */}
+      {/* SECTION 4: Why Choose MT Roofing and Damp Proofing */}
       <HomeWhyUs />
 
       {/* SECTION 5: Meet Our Team */}

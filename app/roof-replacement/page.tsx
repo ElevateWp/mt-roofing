@@ -1,8 +1,5 @@
-import type { Metadata } from 'next';
-import ServiceLandingPage, { getServiceMetadata } from '@/components/sections/services/ServiceLandingPage';
+import { redirect } from 'next/navigation';
 
-export const metadata: Metadata = getServiceMetadata('roof-replacement');
-
-export default function RefurbishmentsPage() {
-  return <ServiceLandingPage slug="roof-replacement" />;
+export default function LegacyRoofReplacementPage() {
+  redirect('/services/roof-replacement/');
 }

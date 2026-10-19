@@ -11,7 +11,7 @@ import { createMetadata } from '@/lib/seo';
 export const metadata: Metadata = createMetadata({
   title: 'Contact and Service Area',
   description:
-    'Contact East Coast Roofing on +61 430 964 182 about roof replacement, roof repairs, gutters and fascias, and roof maintenance in North Queensland.',
+    'Contact MT Roofing and Damp Proofing on +44 7951 960060 about roofing and damp proofing services in Sevenoaks and Kent.',
   pathname: '/contact/',
 });
 
@@ -31,9 +31,9 @@ export default function ContactPage() {
                 <span className="font-body text-13 text-forest-ink/60 block mb-3 uppercase tracking-wider font-medium">
                   Contact & Quotes
                 </span>
-                <WordRevealH1 text="Talk to Felix and the team." />
+                <WordRevealH1 text="Talk to our team." />
                 <p className="font-body text-17 md:text-21 text-forest-ink/90 leading-relaxed mt-6 max-w-2xl">
-                  Call us to discuss roof replacement, repairs, gutters and fascias, or roof maintenance.
+                  Call us to discuss roofing, damp proofing, inspections, guttering or roofline work.
                 </p>
               </AnimateOnScroll>
             </div>
@@ -90,13 +90,13 @@ export default function ContactPage() {
                           {CLINIC_INFO.contact.phone}
                         </a>
                       </div>
-                      <span className="font-body text-13 text-forest-ink/60">Call to confirm opening hours</span>
+                    <span className="font-body text-13 text-forest-ink/60">Listed as open 24 hours</span>
                     </div>
 
                     <div className="py-5">
                       <span className="font-body text-13 text-forest-ink/60 block">Website</span>
                       <a href={CLINIC_INFO.contact.website} className="font-display text-21 text-forest break-all hover:underline" target="_blank" rel="noopener noreferrer">
-                        roofingeastcoast.com.au
+                        mtroofing.co.uk
                       </a>
                     </div>
 

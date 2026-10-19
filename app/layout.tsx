@@ -9,19 +9,19 @@ import JsonLd from '@/components/ui/JsonLd';
 import { generateLocalBusinessSchema } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://roofingeastcoast.com.au'),
+  metadataBase: new URL('https://mtroofing.co.uk'),
   title: {
-    default: 'East Coast Roofing',
+    default: 'MT Roofing and Damp Proofing',
     template: '%s',
   },
   description:
-    'East Coast Roofing provides roof replacements, roof repairs, gutters and fascias, and roof maintenance across North Queensland. Call +61 430 964 182.',
+    'MT Roofing and Damp Proofing provides roofing, damp proofing and roofline services across Sevenoaks and Kent. Call +44 7951 960060.',
   keywords: [
-    'East Coast Roofing',
-    'roof replacement North Queensland',
-    'roof repairs Cairns',
+    'MT Roofing and Damp Proofing',
+    'roof replacement Sevenoaks and Kent',
+    'roof repairs Sevenoaks',
   ],
-  authors: [{ name: 'East Coast Roofing' }],
+  authors: [{ name: 'MT Roofing and Damp Proofing' }],
   icons: {
     icon: [
       { url: '/icon.png', sizes: '32x32', type: 'image/png' },
@@ -38,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en-AU" className="scroll-smooth">
+    <html lang="en-GB" className="scroll-smooth">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -47,7 +47,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#F2F6FC] selection:text-[#183454]">
+      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#F3F8FC] selection:text-[#17191C]">
         <PagePreloader />
         <SiteTextReveal />
         <JsonLd data={generateLocalBusinessSchema()} />

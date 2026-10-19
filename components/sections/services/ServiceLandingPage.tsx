@@ -9,19 +9,12 @@ import JsonLd from '@/components/ui/JsonLd';
 import { CLINIC_INFO, SERVICES } from '@/lib/clinic-data';
 import { createMetadata, generateServiceSchema } from '@/lib/seo';
 
-const RELATED_SERVICE_SLUGS: Record<string, string[]> = {
-  'roof-replacement': ['roof-repairs', 'gutters-and-fascias', 'roof-maintenance'],
-  'roof-repairs': ['roof-maintenance', 'roof-replacement', 'gutters-and-fascias'],
-  'gutters-and-fascias': ['roof-maintenance', 'roof-replacement', 'roof-repairs'],
-  'roof-maintenance': ['roof-repairs', 'gutters-and-fascias', 'roof-replacement'],
-};
-
 export default function ServiceLandingPage({ slug }: { slug: string }) {
   const service = SERVICES.find((item) => item.slug === slug);
   if (!service) return null;
 
   const photo = service.beforeAfterCase.beforeImage;
-  const servicePath = `/${service.slug}/`;
+  const servicePath = `/services/${service.slug}/`;
   const schema = generateServiceSchema(service.name, service.shortDescription, servicePath);
 
   return (
@@ -34,7 +27,7 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
             <div className="lg:col-span-7">
               <AnimateOnScroll animation="fade-right" duration={0.8}>
                 <span className="mb-3 block font-body text-13 font-medium uppercase tracking-wider text-brand">
-                  East Coast Roofing · North Queensland
+                  MT Roofing and Damp Proofing · Sevenoaks and Kent
                 </span>
                 <WordRevealH1 text={service.name} />
                 <p className="mt-6 max-w-2xl font-body text-17 leading-relaxed text-forest-ink/85 md:text-21">
@@ -205,12 +198,10 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
             <h2 className="font-display text-33 text-forest-ink md:text-41">Related roofing services</h2>
           </AnimateOnScroll>
           <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3">
-            {(RELATED_SERVICE_SLUGS[service.slug] ?? []).map((relatedSlug, index) => {
-              const related = SERVICES.find((item) => item.slug === relatedSlug);
-              if (!related) return null;
+            {SERVICES.filter((item) => item.slug !== service.slug).slice(0, 3).map((related, index) => {
               return (
                 <AnimateOnScroll key={related.slug} animation="fade-up" delay={index * 0.08} className="h-full">
-                  <Link href={`/${related.slug}/`} className="group flex h-full flex-col border border-mist bg-paper p-6 transition-colors hover:bg-paper-secondary md:p-7">
+                  <Link href={`/services/${related.slug}/`} className="group flex h-full flex-col border border-mist bg-paper p-6 transition-colors hover:bg-paper-secondary md:p-7">
                     <h3 className="font-display text-21 text-forest-ink">{related.name}</h3>
                     <p className="mt-3 flex-1 font-body text-15 leading-relaxed text-forest-light">{related.shortDescription}</p>
                     <span className="mt-6 font-body text-13 font-medium text-brand transition-colors group-hover:text-brand-hover">Explore service →</span>
@@ -225,7 +216,7 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
       <section className="bg-forest py-14 text-paper md:py-20">
         <div className="mx-auto flex max-w-site flex-col items-start justify-between gap-6 px-6 md:flex-row md:items-center md:px-12">
           <div>
-            <span className="mb-2 block font-body text-13 font-semibold uppercase tracking-wider text-paper/65">East Coast Roofing · North Queensland roofing contractor</span>
+            <span className="mb-2 block font-body text-13 font-semibold uppercase tracking-wider text-paper/65">MT Roofing and Damp Proofing · Sevenoaks and Kent roofing contractor</span>
             <h2 className="font-display text-26 md:text-33">Tell us what you have in mind.</h2>
           </div>
           <Link href="/request-a-quote/" className="inline-flex min-h-12 items-center justify-center bg-paper px-6 font-body text-15 font-semibold text-forest transition-colors hover:bg-softBlue">Request a quote</Link>
@@ -238,5 +229,5 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
 export function getServiceMetadata(slug: string) {
   const service = SERVICES.find((item) => item.slug === slug);
   if (!service) return {};
-  return createMetadata({ title: service.name, description: service.shortDescription, pathname: `/${service.slug}/` });
+  return createMetadata({ title: service.name, description: service.shortDescription, pathname: `/services/${service.slug}/` });
 }

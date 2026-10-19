@@ -62,7 +62,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
     dateModified: post.lastUpdated,
     author: {
       '@type': 'Person',
-      name: author?.name || 'Equipe East Coast Roofing',
+      name: author?.name || 'Equipe MT Roofing and Damp Proofing',
     },
     publisher: {
       '@type': 'Organization',
@@ -185,7 +185,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
                     {relatedService.shortDescription}
                   </p>
                   <Link
-                    href={`/${relatedService.slug}/`}
+                    href={`/services/${relatedService.slug}/`}
                     className="font-body text-15 text-forest font-medium underline underline-offset-4"
                   >
                     Explore {relatedService.navLabel} →

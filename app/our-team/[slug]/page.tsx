@@ -67,7 +67,7 @@ export default function SingleDentistPage({ params }: DentistProfileProps) {
         <div className="max-w-site mx-auto px-6 md:px-12">
           <Breadcrumbs
             items={[
-              { name: 'East Coast Roofing team', path: '/our-team/' },
+              { name: 'MT Roofing and Damp Proofing team', path: '/our-team/' },
               { name: dentist.name, path: `/our-team/${dentist.slug}/` },
             ]}
           />
@@ -196,7 +196,7 @@ export default function SingleDentistPage({ params }: DentistProfileProps) {
                       </p>
                     </div>
                     <Link
-                      href={`/${service.slug}/`}
+                      href={`/services/${service.slug}/`}
                       className="font-body text-13 text-forest font-medium hover:underline inline-flex items-center gap-1"
                     >
                       View service details →

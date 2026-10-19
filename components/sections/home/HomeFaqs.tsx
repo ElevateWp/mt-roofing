@@ -8,18 +8,18 @@ import { CLINIC_INFO } from '@/lib/clinic-data';
 const HOME_FAQS: AccordionItem[] = [
   {
     question: 'What roofing services do you provide?',
-    answer: 'Roof replacement, roof repairs, gutters and fascias, and roof maintenance.',
+    answer: 'Flat and pitched roofing, roof repairs and replacement, inspections, chimney repairs, damp proofing, guttering, fascias and soffits, and emergency repairs.',
     relatedLink: { href: '/services/', label: 'Explore our services →' },
   },
   {
     question: 'Do you cover my area?',
-    answer: 'East Coast Roofing is based in North Queensland, Queensland. Contact the team to discuss your property.',
+    answer: 'MT Roofing and Damp Proofing is based in Sundridge, Sevenoaks. Contact the team to discuss your property and service area.',
     relatedLink: { href: '/contact/', label: 'Contact our team →' },
   },
   {
     question: 'Can you help with gutters and fascias?',
-    answer: 'East Coast Roofing installs and repairs gutters and fascias to help manage rainwater and protect your roofline.',
-    relatedLink: { href: '/gutters-and-fascias/', label: 'Explore gutters and fascias →' },
+    answer: 'MT Roofing and Damp Proofing installs and repairs gutters and fascias to help manage rainwater and protect your roofline.',
+    relatedLink: { href: '/services/guttering/', label: 'Explore guttering →' },
   },
   {
     question: 'How do I request a quote?',
@@ -27,7 +27,7 @@ const HOME_FAQS: AccordionItem[] = [
     relatedLink: { href: '/request-a-quote/', label: 'Request a quote →' },
   },
   {
-    question: 'Where is East Coast Roofing based?',
+    question: 'Where is MT Roofing and Damp Proofing based?',
     answer: CLINIC_INFO.primaryLocation.directions,
     relatedLink: { href: '/contact/', label: 'Check our service area →' },
   },
@@ -47,7 +47,7 @@ export default function HomeFaqs() {
               Questions about your roofing project
             </h2>
             <p className="font-body text-15 md:text-17 text-forest-ink/80 leading-relaxed mb-6">
-                Clear answers about roof work, quotes and our North Queensland location.
+                Clear answers about roof work, quotes and our Sevenoaks and Kent location.
             </p>
             <div className="p-6 bg-mist/40 border border-mist">
               <span className="font-body text-13 text-forest font-medium block mb-1">

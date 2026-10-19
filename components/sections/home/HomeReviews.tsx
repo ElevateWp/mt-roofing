@@ -5,16 +5,16 @@ import AnimateOnScroll from '@/components/motion/AnimateOnScroll';
 
 const REVIEWS = [
   {
-    name: 'Sheryl Webby',
-    quote: 'Great service and roofing repair work done by East Coast Roofing.',
+    name: 'Cornelius WR',
+    quote: 'Good work completed quickly and at a good price.',
   },
   {
-    name: 'Deb Lane',
-    quote: 'Fast and efficient, without a huge waiting period. Communication and photos of repairs needed, and completed. Would not hesitate to recommend!!',
+    name: 'christopher stapley',
+    quote: 'Good service, hard working and tidy workmen. I will definitely use them again.',
   },
   {
-    name: 'Ellie Winter',
-    quote: 'We just had a complete Colorbond reroof done with Felix & the team on our 40yr old house. We got 3 quotes & decided to go with East Coast Roofing. From initial contact to completion, Felix always answered my inexperienced questions.',
+    name: 'Kay Gudgeon',
+    quote: 'Very pleased with the work that has been carried out. Lovely bunch of lads as well, really good company.',
   },
 ];
 

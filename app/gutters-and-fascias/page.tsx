@@ -1,8 +1,5 @@
-import type { Metadata } from 'next';
-import ServiceLandingPage, { getServiceMetadata } from '@/components/sections/services/ServiceLandingPage';
+import { redirect } from 'next/navigation';
 
-export const metadata: Metadata = getServiceMetadata('gutters-and-fascias');
-
-export default function KitchensBathroomsPage() {
-  return <ServiceLandingPage slug="gutters-and-fascias" />;
+export default function LegacyGuttersAndFasciasPage() {
+  redirect('/services/guttering/');
 }

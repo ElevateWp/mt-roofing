@@ -148,9 +148,9 @@ export default function PagePreloader() {
   return (
     <div
       ref={containerRef}
-      className="fixed inset-0 z-[99999] flex items-center justify-center bg-[#102B5A] text-paper overflow-hidden select-none"
+      className="fixed inset-0 z-[99999] flex items-center justify-center bg-[#102A3B] text-paper overflow-hidden select-none"
       style={{ willChange: 'clip-path, opacity' }}
-      aria-label="Loading East Coast Roofing"
+      aria-label="Loading MT Roofing and Damp Proofing"
     >
       {/* One charcoal cover retracts along a stepped diagonal, keeping the reveal continuous. */}
 
@@ -161,11 +161,11 @@ export default function PagePreloader() {
         {/* Animated 3D Logo */}
         <div
           ref={logoRef}
-          className="relative w-20 h-20 sm:w-24 sm:h-24 bg-paper rounded-2xl shadow-2xl p-2.5 flex items-center justify-center mb-6 border border-[#3472C9]/40"
+          className="relative w-20 h-20 sm:w-24 sm:h-24 bg-paper rounded-2xl shadow-2xl p-2.5 flex items-center justify-center mb-6 border border-[#18C5ED]/40"
         >
           <Image
             src="/images/logo.png"
-            alt="East Coast Roofing"
+            alt="MT Roofing and Damp Proofing"
             width={80}
             height={80}
             priority
@@ -178,7 +178,7 @@ export default function PagePreloader() {
           ref={titleRef}
           className="font-display text-22 sm:text-30 md:text-36 font-medium text-paper uppercase tracking-[0.08em] leading-tight mb-3 text-shadow-sm"
         >
-          East Coast Roofing
+          MT Roofing and Damp Proofing
         </h1>
 
         {/* Delicate Golden-Lime Divider Line */}
@@ -192,7 +192,7 @@ export default function PagePreloader() {
           ref={subtitleRef}
           className="font-body text-12 sm:text-13 text-paper/85 uppercase tracking-[0.15em]"
         >
-          North Queensland roofing contractor • North Queensland
+          Sevenoaks and Kent roofing contractor • Sevenoaks and Kent
         </p>
       </div>
     </div>

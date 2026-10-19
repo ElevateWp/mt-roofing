@@ -14,17 +14,17 @@ import { CLINIC_INFO, DENTISTS } from '@/lib/clinic-data';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'About East Coast Roofing',
+  title: 'About MT Roofing and Damp Proofing',
   description:
-    'Meet East Coast Roofing, based in Trinity Beach, Queensland. Felix and the team work on roof replacement, repairs, gutters and fascias, and maintenance.',
+    'Meet MT Roofing and Damp Proofing, based in Sevenoaks, Kent. The MT Roofing team work on roofing, damp proofing, roofline services and inspections.',
   pathname: '/about/',
 });
 
 const TIMELINE = [
   {
-    year: 'North Queensland',
-    title: 'Roofing services in North Queensland',
-    description: 'East Coast Roofing provides roof replacement, repairs, gutters and fascias, and roof maintenance in North Queensland.',
+    year: 'Local service',
+    title: 'Roofing services in Sevenoaks and Kent',
+    description: 'MT Roofing and Damp Proofing provides roofing, damp proofing, roofline services and inspections in Sevenoaks and Kent.',
   },
 ];
 
@@ -59,11 +59,11 @@ export default function AboutPage() {
             <div className="lg:col-span-8">
               <AnimateOnScroll animation="fade-right" duration={0.8}>
                 <span className="font-body text-13 text-forest-ink/60 block mb-3 font-medium uppercase tracking-wider">
-                  About East Coast Roofing
+                  About MT Roofing and Damp Proofing
                 </span>
-                <WordRevealH1 text="Roof care in North Queensland." />
+                <WordRevealH1 text="Roof care in Sevenoaks and Kent." />
                 <div className="mt-8">
-                  <ScrubbedParagraph text="Based in Trinity Beach, East Coast Roofing provides roof replacement, repairs, gutters and fascias, and roof maintenance across North Queensland." />
+                  <ScrubbedParagraph text="Based in Sevenoaks, MT Roofing and Damp Proofing provides roofing, damp proofing, roofline services and inspections across Sevenoaks and Kent." />
                 </div>
               </AnimateOnScroll>
             </div>
@@ -73,7 +73,7 @@ export default function AboutPage() {
                 <div className="p-6 bg-paper border border-mist space-y-3 font-body text-13 text-forest-ink/80 shadow-sm">
                   <div className="flex justify-between border-b border-mist pb-2">
                     <span>Based in</span>
-                    <span className="font-medium text-forest">Trinity Beach, QLD</span>
+                    <span className="font-medium text-forest">Sevenoaks, Kent</span>
                   </div>
                 </div>
               </AnimateOnScroll>
@@ -161,7 +161,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* SECTION 4: Equipe East Coast Roofing */}
+      {/* SECTION 4: Equipe MT Roofing and Damp Proofing */}
       <section className="py-20 md:py-32 border-b border-mist">
         <div className="max-w-site mx-auto px-6 md:px-12">
           <AnimateOnScroll animation="fade-up" duration={0.8}>
@@ -171,7 +171,7 @@ export default function AboutPage() {
                   Our Team
                 </span>
                 <h2 className="font-display text-33 md:text-41 text-forest-ink">
-                  Meet the East Coast Roofing Team
+                  Meet the MT Roofing and Damp Proofing Team
                 </h2>
               </div>
               <Link
@@ -204,7 +204,7 @@ export default function AboutPage() {
                   Roofing for your property
                 </h2>
                 <p className="font-body text-15 md:text-17 text-forest-ink/80 leading-relaxed mb-6">
-                  Felix and the team handle roof replacement, roof repairs, gutters and fascias, and roof maintenance. Customers praise the team’s communication, photos and efficient service.
+                  MT Roofing and Damp Proofing provides flat and pitched roofing, roof replacement and repairs, inspections, chimney repairs, damp proofing, guttering, fascias and soffits, and emergency roof repairs.
                 </p>
                 <div className="space-y-2 font-body text-13 text-forest-ink/70">
                   <div className="flex items-center gap-2">
@@ -314,7 +314,7 @@ export default function AboutPage() {
                 Tell us about your roofing work plans
               </h2>
               <p className="font-body text-15 text-paper/80 mt-2 max-w-xl">
-                Call us to discuss the work you need and check availability across North Queensland.
+                Call us to discuss the work you need and check availability across Sevenoaks and Kent.
               </p>
             </div>
           </AnimateOnScroll>

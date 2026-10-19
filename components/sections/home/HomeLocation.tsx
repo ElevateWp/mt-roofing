@@ -41,13 +41,13 @@ export default function HomeLocation() {
                   href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(CLINIC_INFO.primaryLocation.directions)}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block mt-3 font-body text-13 text-[#2455A4] font-medium hover:underline"
+                  className="inline-block mt-3 font-body text-13 text-[#00A9D8] font-medium hover:underline"
                 >
                   View the address on the map →
                 </a>
                 <div className="flex flex-wrap gap-2 mt-4">
                   {CLINIC_INFO.identityHighlights.map((highlight) => (
-                    <span key={highlight} className="bg-[#F2F6FC] border border-[#D8E3EF] px-3 py-1.5 text-12 text-[#183454]">
+                    <span key={highlight} className="bg-[#F3F8FC] border border-[#DCE5EA] px-3 py-1.5 text-12 text-[#17191C]">
                       {highlight}
                     </span>
                   ))}
@@ -99,7 +99,7 @@ export default function HomeLocation() {
                     className="object-cover"
                 />
                 <div className="absolute bottom-3 left-3 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-3 py-1 font-medium border border-mist/50">
-                  East Coast Roofing
+                  MT Roofing and Damp Proofing
                 </div>
               </div>
             </AnimateOnScroll>
@@ -108,10 +108,10 @@ export default function HomeLocation() {
               <div className="bg-paper border border-mist p-6 shadow-sm flex flex-col justify-between">
                 <div>
                   <span className="font-body text-13 text-forest block mb-1 font-medium uppercase tracking-wider">
-                    Roofing in North Queensland
+                    Roofing in Sevenoaks and Kent
                   </span>
                   <h3 className="font-display text-21 text-forest-ink mb-2">
-                    Roof replacement, repairs, gutters and fascias, and maintenance
+                    Roofing, damp proofing and roofline services
                   </h3>
                   <p className="font-body text-13 text-forest-ink/80 mb-3 leading-relaxed">
                     Roofing projects discussed from the first conversation through to completion.
